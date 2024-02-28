@@ -1,0 +1,267 @@
+# Created by Ultra Librarian 8.3.350 Copyright © 1999-2024
+# Frank Frank, Accelerated Designs
+
+Grid mil;
+Set Wire_Bend 2;
+
+
+Edit 'SCD41-D-R1_SEN.pac';
+Grid Mil;
+Layer 1;
+Smd '1' 32 59 -0 R270 (-157.4803 98.4252);
+Layer 1;
+Smd '2' 32 59 -0 R270 (-157.4803 49.2126);
+Layer 1;
+Smd '3' 32 59 -0 R270 (-157.4803 0);
+Layer 1;
+Smd '4' 32 59 -0 R270 (-157.4803 -49.2126);
+Layer 1;
+Smd '5' 32 59 -0 R270 (-157.4803 -98.4252);
+Layer 1;
+Smd '6' 32 59 -0 R180 (-98.4252 -157.4803);
+Layer 1;
+Smd '7' 32 59 -0 R180 (-49.2126 -157.4803);
+Layer 1;
+Smd '8' 32 59 -0 R180 (0 -157.4803);
+Layer 1;
+Smd '9' 32 59 -0 R180 (49.2126 -157.4803);
+Layer 1;
+Smd '10' 32 59 -0 R180 (98.4252 -157.4803);
+Layer 1;
+Smd '11' 32 59 -0 R270 (157.4803 -98.4252);
+Layer 1;
+Smd '12' 32 59 -0 R270 (157.4803 -49.2126);
+Layer 1;
+Smd '13' 32 59 -0 R270 (157.4803 0);
+Layer 1;
+Smd '14' 32 59 -0 R270 (157.4803 49.2126);
+Layer 1;
+Smd '15' 32 59 -0 R270 (157.4803 98.4252);
+Layer 1;
+Smd '16' 32 59 -0 R180 (98.4252 157.4803);
+Layer 1;
+Smd '17' 32 59 -0 R180 (49.2126 157.4803);
+Layer 1;
+Smd '18' 32 59 -0 R180 (0 157.4803);
+Layer 1;
+Smd '19' 32 59 -0 R180 (-49.2126 157.4803);
+Layer 1;
+Smd '20' 32 59 -0 R180 (-98.4252 157.4803);
+Layer 1;
+Smd '21' 189 189 -0 R0 (0 0);
+Layer 21;
+Wire 6 (-220 -220) (220 -220);
+Wire 6 (220 -220) (220 220);
+Wire 6 (220 220) (-220 220);
+Wire 6 (-220 220) (-220 -220);
+Layer 21;
+Change Spacing 50;
+Change Pour solid;
+Polygon 1  (90.9252 -196.9803) (90.9252 -206.9803) (105.9252 -206.9803) \
+    (105.9252 -196.9803) (90.9252 -196.9803);
+Layer 21;
+Change Spacing 50;
+Change Pour solid;
+Polygon 1  (-105.9252 196.9803) (-105.9252 206.9803) (-90.9252 206.9803) \
+    (-90.9252 196.9803) (-105.9252 196.9803);
+Change Size 50;
+Change Ratio 6;
+Text '*' SR0 (-235 113);
+Layer 31;
+Layer 31;
+Change Spacing 50;
+Change Pour solid;
+Polygon 1  (-90.563 90.563) (-90.563 35.437) (-35.437 35.437) (-35.437 90.563) (-90.563 90.563);
+Layer 31;
+Change Spacing 50;
+Change Pour solid;
+Polygon 1  (-90.563 27.563) (-90.563 -27.563) (-35.437 -27.563) (-35.437 27.563) (-90.563 27.563);
+Layer 31;
+Change Spacing 50;
+Change Pour solid;
+Polygon 1  (-90.563 -35.437) (-90.563 -90.563) (-35.437 -90.563) (-35.437 -35.437) (-90.563 -35.437);
+Layer 31;
+Change Spacing 50;
+Change Pour solid;
+Polygon 1  (-27.563 90.563) (-27.563 35.437) (27.563 35.437) (27.563 90.563) (-27.563 90.563);
+Layer 31;
+Change Spacing 50;
+Change Pour solid;
+Polygon 1  (-27.563 27.563) (-27.563 -27.563) (27.563 -27.563) (27.563 27.563) (-27.563 27.563);
+Layer 31;
+Change Spacing 50;
+Change Pour solid;
+Polygon 1  (-27.563 -35.437) (-27.563 -90.563) (27.563 -90.563) (27.563 -35.437) (-27.563 -35.437);
+Layer 31;
+Change Spacing 50;
+Change Pour solid;
+Polygon 1  (35.437 90.563) (35.437 35.437) (90.563 35.437) (90.563 90.563) (35.437 90.563);
+Layer 31;
+Change Spacing 50;
+Change Pour solid;
+Polygon 1  (35.437 27.563) (35.437 -27.563) (90.563 -27.563) (90.563 27.563) (35.437 27.563);
+Layer 31;
+Change Spacing 50;
+Change Pour solid;
+Polygon 1  (35.437 -35.437) (35.437 -90.563) (90.563 -90.563) (90.563 -35.437) (35.437 -35.437);
+Layer 47;
+Wire 6 (157 98) (302 98);
+Wire 6 (157 49) (302 49);
+Wire 6 (287 98) (287 148);
+Wire 6 (287 49) (287 -1);
+Wire 6 (287 98) (282 108);
+Wire 6 (287 98) (292 108);
+Wire 6 (282 108) (292 108);
+Wire 6 (287 49) (282 39);
+Wire 6 (287 49) (292 39);
+Wire 6 (282 39) (292 39);
+Wire 6 (-157 98) (-157 377);
+Wire 6 (157 98) (157 377);
+Wire 6 (-157 362) (157 362);
+Wire 6 (-157 362) (-147 367);
+Wire 6 (-157 362) (-147 357);
+Wire 6 (-147 367) (-147 357);
+Wire 6 (157 362) (147 367);
+Wire 6 (157 362) (147 357);
+Wire 6 (147 367) (147 357);
+Wire 6 (98 157) (377 157);
+Wire 6 (98 -157) (377 -157);
+Wire 6 (362 157) (362 -157);
+Wire 6 (362 157) (357 147);
+Wire 6 (362 157) (367 147);
+Wire 6 (357 147) (367 147);
+Wire 6 (362 -157) (357 -147);
+Wire 6 (362 -157) (367 -147);
+Wire 6 (357 -147) (367 -147);
+Wire 6 (204 204) (-327 204);
+Wire 6 (204 -204) (-327 -204);
+Wire 6 (-312 204) (-312 -204);
+Wire 6 (-312 204) (-317 194);
+Wire 6 (-312 204) (-307 194);
+Wire 6 (-317 194) (-307 194);
+Wire 6 (-312 -204) (-317 -194);
+Wire 6 (-312 -204) (-307 -194);
+Wire 6 (-317 -194) (-307 -194);
+Wire 6 (-204 204) (-204 -327);
+Wire 6 (204 204) (204 -327);
+Wire 6 (-204 -312) (204 -312);
+Wire 6 (-204 -312) (-194 -307);
+Wire 6 (-204 -312) (-194 -317);
+Wire 6 (-194 -307) (-194 -317);
+Wire 6 (204 -312) (194 -307);
+Wire 6 (204 -312) (194 -317);
+Wire 6 (194 -307) (194 -317);
+Change Size 50;
+Change Ratio 6;
+Text 'Default Padstyle: RX32Y59D0T' SR0 (-599 -437);
+Change Size 50;
+Change Ratio 6;
+Text 'Heat Tab Padstyle: RX189Y189D0T' SR0 (-681 -497);
+Change Size 50;
+Change Ratio 6;
+Text 'Alt 1 Padstyle: OX60Y90D30P' SR0 (-583 -617);
+Change Size 50;
+Change Ratio 6;
+Text 'Alt 2 Padstyle: OX90Y60D30P' SR0 (-583 -677);
+Change Size 25;
+Change Ratio 4;
+Text '0.049in/1.25mm' SR0 (307 61);
+Change Size 25;
+Change Ratio 4;
+Text '0.315in/8mm' SR0 (-117 382);
+Change Size 25;
+Change Ratio 4;
+Text '0.315in/8mm' SR0 (382 -12);
+Change Size 25;
+Change Ratio 4;
+Text '0.409in/10.389mm' SR0 (-673 -12);
+Change Size 25;
+Change Ratio 4;
+Text '0.409in/10.389mm' SR0 (-170 -357);
+Layer 51;
+Wire 6 (-204 154) (-154 204);
+Wire 6 (-204 -204) (204 -204);
+Wire 6 (204 -204) (204 204);
+Wire 6 (204 204) (-204 204);
+Wire 6 (-204 204) (-204 -204);
+Change Size 50;
+Change Ratio 6;
+Text '*' SR0 (-141 98);
+Layer 27;
+Change Size 50;
+Change Ratio 6;
+Text '>Name' SR0 (-129 -25);
+Change Size 50;
+Change Ratio 6;
+Text '>Value' SR0 (-68 -25);
+Layer 25;
+
+Edit 'SCD41-D-R1.sym';
+Grid Mil;
+Layer 94;
+Pin 'DNC_2' NC None Middle R0 Both 0 (100 0)
+Pin 'DNC_3' NC None Middle R0 Both 0 (100 -100)
+Pin 'DNC_4' NC None Middle R0 Both 0 (100 -200)
+Pin 'DNC_5' NC None Middle R0 Both 0 (100 -300)
+Pin 'DNC_6' NC None Middle R0 Both 0 (100 -400)
+Pin 'GND_2' Pas None Middle R0 Both 0 (100 -500)
+Pin 'VDD' Pwr None Middle R0 Both 0 (100 -600)
+Pin 'DNC_7' NC None Middle R0 Both 0 (100 -700)
+Pin 'SCL' In None Middle R0 Both 0 (100 -800)
+Pin 'SDA' I/O None Middle R0 Both 0 (100 -900)
+Pin 'DNC_8' NC None Middle R180 Both 0 (1500 -1000)
+Pin 'DNC_9' NC None Middle R180 Both 0 (1500 -900)
+Pin 'DNC_10' NC None Middle R180 Both 0 (1500 -800)
+Pin 'DNC_11' NC None Middle R180 Both 0 (1500 -700)
+Pin 'DNC_12' NC None Middle R180 Both 0 (1500 -600)
+Pin 'DNC_13' NC None Middle R180 Both 0 (1500 -500)
+Pin 'DNC_14' NC None Middle R180 Both 0 (1500 -400)
+Pin 'DNC' NC None Middle R180 Both 0 (1500 -300)
+Pin 'VDDH' Pwr None Middle R180 Both 0 (1500 -200)
+Pin 'GND_3' Pas None Middle R180 Both 0 (1500 -100)
+Pin 'GND' Pas None Middle R180 Both 0 (1500 0)
+Wire 6 (300 200) (300 -1200);
+Wire 6 (300 -1200) (1300 -1200);
+Wire 6 (1300 -1200) (1300 200);
+Wire 6 (1300 200) (300 200);
+Layer 97;
+Layer 95;
+Change Size 82;
+Change Ratio 6;
+Text '>Name' SR0 (614 359);
+Layer 96;
+Change Size 82;
+Change Ratio 6;
+Text '>Value' SR0 (589 259);
+
+Edit 'SCD41-D-R1.dev';
+Prefix 'U';
+Description '';
+Value Off;
+Add SCD41-D-R1 'A' Next  0 (0 0);
+Package 'SCD41-D-R1_SEN';
+Technology '';
+Attribute Copyright 'Copyright (C) 2024 Ultra Librarian. All rights reserved.';
+Attribute Mfr_Name 'Sensirion';
+Attribute Manufacturer_Part_Number 'SCD41-D-R1';
+Connect 'A.DNC_2' '1';
+Connect 'A.DNC_3' '2';
+Connect 'A.DNC_4' '3';
+Connect 'A.DNC_5' '4';
+Connect 'A.DNC_6' '5';
+Connect 'A.GND_2' '6';
+Connect 'A.VDD' '7';
+Connect 'A.DNC_7' '8';
+Connect 'A.SCL' '9';
+Connect 'A.SDA' '10';
+Connect 'A.DNC_8' '11';
+Connect 'A.DNC_9' '12';
+Connect 'A.DNC_10' '13';
+Connect 'A.DNC_11' '14';
+Connect 'A.DNC_12' '15';
+Connect 'A.DNC_13' '16';
+Connect 'A.DNC_14' '17';
+Connect 'A.DNC' '18';
+Connect 'A.VDDH' '19';
+Connect 'A.GND_3' '20';
+Connect 'A.GND' '21';
