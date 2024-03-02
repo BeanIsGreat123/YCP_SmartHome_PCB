@@ -14211,24 +14211,20 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <part name="SUPPLY12" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="VDD" device=""/>
 <part name="U$2" library="Multiplexer_SN74HC153PWR" deviceset="MULTIPLEXER_SN74" device=""/>
 <part name="U3" library="DIP-GAS-MQ-9_6P-D19MM_" deviceset="DIP-GAS-MQ-9(6P-D19MM)" device=""/>
-<part name="R1" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="R" device="" value="TBD"/>
-<part name="R2" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="R" device="" value="TBD"/>
-<part name="R3" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="R" device="" value="TBD"/>
-<part name="R4" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="R" device="" value="TBD"/>
+<part name="R1" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="R" device="" value="680k"/>
+<part name="R2" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="R" device="" value="50k"/>
+<part name="R3" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="R" device="" value="1M"/>
 <part name="SUPPLY13" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="VDD" device="" value="3V3"/>
-<part name="SUPPLY14" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="VDD" device="" value="3V3"/>
 <part name="SUPPLY15" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="SUPPLY16" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="U4" library="NA555DR" deviceset="NA555DR" device=""/>
 <part name="SUPPLY17" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="VDD" device="" value="5+"/>
 <part name="SUPPLY18" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="R5" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="R" device="" value="TBD"/>
-<part name="R6" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="R" device="" value="TBD"/>
-<part name="C8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/2" value="TBD"/>
+<part name="R6" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="R" device="" value="1M"/>
+<part name="C8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/2" value="10uF"/>
 <part name="SUPPLY19" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="R7" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="R" device="" value="TBD"/>
+<part name="R7" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="R" device="" value="1M"/>
 <part name="SUPPLY20" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="VDD" device="" value="5+"/>
-<part name="C9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/2" value="TBD"/>
+<part name="C9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/2" value="1uF"/>
 <part name="SUPPLY21" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="CR2" library="1n4148WX-TP_Diode" deviceset="1N4148WX-TP" device=""/>
 <part name="CR1" library="1n4148WX-TP_Diode" deviceset="1N4148WX-TP" device=""/>
@@ -14372,33 +14368,23 @@ I'm currently thinking ten seconds but that's TBD</text>
 <attribute name="NAME" x="115.568190625" y="121.921809375" size="1.270359375" layer="95" ratio="10"/>
 <attribute name="VALUE" x="123.19021875" y="121.92111875" size="1.27021875" layer="96" ratio="10"/>
 </instance>
-<instance part="R1" gate="G$1" x="132.08" y="-10.16" smashed="yes" rot="R180">
-<attribute name="NAME" x="134.62" y="-12.7" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="134.62" y="-6.35" size="1.778" layer="96" rot="R180"/>
-</instance>
-<instance part="R2" gate="G$1" x="144.78" y="0" smashed="yes" rot="R270">
+<instance part="R1" gate="G$1" x="144.78" y="0" smashed="yes" rot="R270">
 <attribute name="NAME" x="147.32" y="2.54" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="140.97" y="2.54" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="R3" gate="G$1" x="134.62" y="-50.8" smashed="yes" rot="R180">
-<attribute name="NAME" x="137.16" y="-53.34" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="137.16" y="-46.99" size="1.778" layer="96" rot="R180"/>
+<instance part="R2" gate="G$1" x="144.78" y="-30.48" smashed="yes" rot="R270">
+<attribute name="NAME" x="147.32" y="-27.94" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="140.97" y="-27.94" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="R4" gate="G$1" x="147.32" y="-60.96" smashed="yes" rot="R270">
-<attribute name="NAME" x="149.86" y="-58.42" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="143.51" y="-58.42" size="1.778" layer="96" rot="R270"/>
+<instance part="R3" gate="G$1" x="144.78" y="-60.96" smashed="yes" rot="R270">
+<attribute name="NAME" x="147.32" y="-58.42" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="140.97" y="-58.42" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="SUPPLY13" gate="G$1" x="121.92" y="2.54" smashed="yes">
-<attribute name="VALUE" x="120.015" y="5.715" size="1.778" layer="96"/>
+<instance part="SUPPLY13" gate="G$1" x="144.78" y="12.7" smashed="yes">
+<attribute name="VALUE" x="142.875" y="15.875" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY14" gate="G$1" x="121.92" y="-40.64" smashed="yes">
-<attribute name="VALUE" x="120.015" y="-37.465" size="1.778" layer="96"/>
-</instance>
-<instance part="SUPPLY15" gate="GND" x="147.32" y="-76.2" smashed="yes">
-<attribute name="VALUE" x="145.415" y="-79.375" size="1.778" layer="96"/>
-</instance>
-<instance part="SUPPLY16" gate="GND" x="144.78" y="15.24" smashed="yes" rot="R180">
-<attribute name="VALUE" x="146.685" y="18.415" size="1.778" layer="96" rot="R180"/>
+<instance part="SUPPLY15" gate="GND" x="144.78" y="-76.2" smashed="yes">
+<attribute name="VALUE" x="142.875" y="-79.375" size="1.778" layer="96"/>
 </instance>
 <instance part="U4" gate="G$1" x="289.56" y="-30.48" smashed="yes">
 <attribute name="NAME" x="276.86" y="-16.78" size="2.0828" layer="95" ratio="10" rot="SR0"/>
@@ -14409,10 +14395,6 @@ I'm currently thinking ten seconds but that's TBD</text>
 </instance>
 <instance part="SUPPLY18" gate="GND" x="309.88" y="-50.8" smashed="yes">
 <attribute name="VALUE" x="307.975" y="-53.975" size="1.778" layer="96"/>
-</instance>
-<instance part="R5" gate="G$1" x="289.56" y="-7.62" smashed="yes">
-<attribute name="NAME" x="287.02" y="-5.08" size="1.778" layer="95"/>
-<attribute name="VALUE" x="287.02" y="-11.43" size="1.778" layer="96"/>
 </instance>
 <instance part="R6" gate="G$1" x="254" y="-25.4" smashed="yes" rot="R90">
 <attribute name="NAME" x="251.46" y="-27.94" size="1.778" layer="95" rot="R90"/>
@@ -14518,18 +14500,6 @@ I'm currently thinking ten seconds but that's TBD</text>
 <wire x1="68.58" y1="73.66" x2="68.58" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R1" gate="G$1" pin="2"/>
-<wire x1="127" y1="-10.16" x2="121.92" y2="-10.16" width="0.1524" layer="91"/>
-<pinref part="SUPPLY13" gate="G$1" pin="VDD"/>
-<wire x1="121.92" y1="-10.16" x2="121.92" y2="0" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="SUPPLY14" gate="G$1" pin="VDD"/>
-<wire x1="121.92" y1="-43.18" x2="121.92" y2="-50.8" width="0.1524" layer="91"/>
-<pinref part="R3" gate="G$1" pin="2"/>
-<wire x1="121.92" y1="-50.8" x2="129.54" y2="-50.8" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="U4" gate="G$1" pin="RESET"/>
 <wire x1="271.78" y1="-25.4" x2="269.24" y2="-25.4" width="0.1524" layer="91"/>
 <pinref part="SUPPLY17" gate="G$1" pin="VDD"/>
@@ -14539,8 +14509,6 @@ I'm currently thinking ten seconds but that's TBD</text>
 <wire x1="269.24" y1="-7.62" x2="269.24" y2="7.62" width="0.1524" layer="91"/>
 <wire x1="271.78" y1="-20.32" x2="269.24" y2="-20.32" width="0.1524" layer="91"/>
 <junction x="269.24" y="-20.32"/>
-<pinref part="R5" gate="G$1" pin="1"/>
-<wire x1="284.48" y1="-7.62" x2="269.24" y2="-7.62" width="0.1524" layer="91"/>
 <junction x="269.24" y="-7.62"/>
 <pinref part="R6" gate="G$1" pin="2"/>
 <wire x1="254" y1="-20.32" x2="254" y2="-7.62" width="0.1524" layer="91"/>
@@ -14566,6 +14534,11 @@ I'm currently thinking ten seconds but that's TBD</text>
 <wire x1="193.04" y1="81.28" x2="193.04" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="U$2" gate="A" pin="VCC"/>
 <wire x1="193.04" y1="76.2" x2="187.96" y2="76.2" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="SUPPLY13" gate="G$1" pin="VDD"/>
+<pinref part="R1" gate="G$1" pin="1"/>
+<wire x1="144.78" y1="10.16" x2="144.78" y2="5.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -14600,16 +14573,6 @@ I'm currently thinking ten seconds but that's TBD</text>
 <pinref part="SUPPLY10" gate="GND" pin="GND"/>
 <wire x1="58.42" y1="58.42" x2="63.5" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="63.5" y1="58.42" x2="63.5" y2="48.26" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="SUPPLY16" gate="GND" pin="GND"/>
-<pinref part="R2" gate="G$1" pin="1"/>
-<wire x1="144.78" y1="12.7" x2="144.78" y2="5.08" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="SUPPLY15" gate="GND" pin="GND"/>
-<pinref part="R4" gate="G$1" pin="2"/>
-<wire x1="147.32" y1="-73.66" x2="147.32" y2="-66.04" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SUPPLY18" gate="GND" pin="GND"/>
@@ -14651,6 +14614,11 @@ I'm currently thinking ten seconds but that's TBD</text>
 <pinref part="SUPPLY26" gate="GND" pin="GND"/>
 <wire x1="152.4" y1="40.64" x2="144.78" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="144.78" y1="40.64" x2="144.78" y2="35.56" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="SUPPLY15" gate="GND" pin="GND"/>
+<pinref part="R3" gate="G$1" pin="2"/>
+<wire x1="144.78" y1="-73.66" x2="144.78" y2="-66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -14805,48 +14773,11 @@ I'm currently thinking ten seconds but that's TBD</text>
 <wire x1="109.22" y1="-2.54" x2="96.52" y2="-2.54" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$11" class="0">
-<segment>
-<pinref part="R3" gate="G$1" pin="1"/>
-<pinref part="U1" gate="G$3" pin="INVERTING_INPUT3"/>
-<wire x1="139.7" y1="-50.8" x2="147.32" y2="-50.8" width="0.1524" layer="91"/>
-<pinref part="R4" gate="G$1" pin="1"/>
-<wire x1="147.32" y1="-50.8" x2="152.4" y2="-50.8" width="0.1524" layer="91"/>
-<wire x1="147.32" y1="-55.88" x2="147.32" y2="-50.8" width="0.1524" layer="91"/>
-<junction x="147.32" y="-50.8"/>
-</segment>
-</net>
-<net name="N$14" class="0">
-<segment>
-<pinref part="R1" gate="G$1" pin="1"/>
-<pinref part="U1" gate="G$4" pin="NON-INVERTING_INPUT4"/>
-<wire x1="137.16" y1="-10.16" x2="144.78" y2="-10.16" width="0.1524" layer="91"/>
-<pinref part="R2" gate="G$1" pin="2"/>
-<wire x1="144.78" y1="-10.16" x2="152.4" y2="-10.16" width="0.1524" layer="91"/>
-<wire x1="144.78" y1="-5.08" x2="144.78" y2="-10.16" width="0.1524" layer="91"/>
-<junction x="144.78" y="-10.16"/>
-</segment>
-</net>
 <net name="TO_DISC_IN" class="0">
 <segment>
-<pinref part="R5" gate="G$1" pin="2"/>
-<wire x1="294.64" y1="-7.62" x2="309.88" y2="-7.62" width="0.1524" layer="91"/>
-<wire x1="309.88" y1="-7.62" x2="309.88" y2="-27.94" width="0.1524" layer="91"/>
 <pinref part="U4" gate="G$1" pin="OUT"/>
-<wire x1="309.88" y1="-27.94" x2="307.34" y2="-27.94" width="0.1524" layer="91"/>
-<wire x1="309.88" y1="-27.94" x2="327.66" y2="-27.94" width="0.1524" layer="91"/>
-<junction x="309.88" y="-27.94"/>
+<wire x1="307.34" y1="-27.94" x2="327.66" y2="-27.94" width="0.1524" layer="91"/>
 <label x="312.42" y="-27.94" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$16" class="0">
-<segment>
-<pinref part="U4" gate="G$1" pin="THRES"/>
-<wire x1="254" y1="-55.88" x2="254" y2="-30.48" width="0.1524" layer="91"/>
-<wire x1="254" y1="-30.48" x2="271.78" y2="-30.48" width="0.1524" layer="91"/>
-<pinref part="R6" gate="G$1" pin="1"/>
-<junction x="254" y="-30.48"/>
-<pinref part="C8" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$17" class="0">
@@ -14870,6 +14801,15 @@ I'm currently thinking ten seconds but that's TBD</text>
 <pinref part="U4" gate="G$1" pin="DISCH"/>
 <wire x1="307.34" y1="-33.02" x2="325.12" y2="-33.02" width="0.1524" layer="91"/>
 <label x="307.34" y="-33.02" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U4" gate="G$1" pin="THRES"/>
+<wire x1="254" y1="-55.88" x2="254" y2="-30.48" width="0.1524" layer="91"/>
+<wire x1="254" y1="-30.48" x2="271.78" y2="-30.48" width="0.1524" layer="91"/>
+<pinref part="R6" gate="G$1" pin="1"/>
+<junction x="254" y="-30.48"/>
+<pinref part="C8" gate="G$1" pin="2"/>
+<label x="254" y="-53.34" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="N$19" class="0">
@@ -14920,6 +14860,28 @@ I'm currently thinking ten seconds but that's TBD</text>
 <wire x1="101.6" y1="114.3" x2="101.6" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="101.6" y1="60.96" x2="152.4" y2="60.96" width="0.1524" layer="91"/>
 <junction x="101.6" y="114.3"/>
+</segment>
+</net>
+<net name="N$11" class="0">
+<segment>
+<pinref part="R1" gate="G$1" pin="2"/>
+<pinref part="R2" gate="G$1" pin="1"/>
+<wire x1="144.78" y1="-5.08" x2="144.78" y2="-10.16" width="0.1524" layer="91"/>
+<pinref part="U1" gate="G$4" pin="NON-INVERTING_INPUT4"/>
+<wire x1="144.78" y1="-10.16" x2="144.78" y2="-25.4" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="-10.16" x2="144.78" y2="-10.16" width="0.1524" layer="91"/>
+<junction x="144.78" y="-10.16"/>
+</segment>
+</net>
+<net name="N$14" class="0">
+<segment>
+<pinref part="R3" gate="G$1" pin="1"/>
+<pinref part="R2" gate="G$1" pin="2"/>
+<wire x1="144.78" y1="-55.88" x2="144.78" y2="-50.8" width="0.1524" layer="91"/>
+<pinref part="U1" gate="G$3" pin="INVERTING_INPUT3"/>
+<wire x1="144.78" y1="-50.8" x2="144.78" y2="-35.56" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="-50.8" x2="144.78" y2="-50.8" width="0.1524" layer="91"/>
+<junction x="144.78" y="-50.8"/>
 </segment>
 </net>
 </nets>
