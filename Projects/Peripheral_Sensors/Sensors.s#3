@@ -512,9 +512,9 @@
 <attribute name="NAME" x="20.6756" y="24.3586" size="2.0828" layer="95" ratio="6" rot="SR0"/>
 <attribute name="VALUE" x="20.0406" y="21.8186" size="2.0828" layer="96" ratio="6" rot="SR0"/>
 </instance>
-<instance part="U1" gate="A" x="25.4" y="66.04" smashed="yes">
-<attribute name="NAME" x="18.1356" y="80.2386" size="2.0828" layer="95" ratio="6" rot="SR0"/>
-<attribute name="VALUE" x="14.9606" y="77.6986" size="2.0828" layer="96" ratio="6" rot="SR0"/>
+<instance part="U1" gate="A" x="25.4" y="50.8" smashed="yes">
+<attribute name="NAME" x="18.1356" y="64.9986" size="2.0828" layer="95" ratio="6" rot="SR0"/>
+<attribute name="VALUE" x="14.9606" y="62.4586" size="2.0828" layer="96" ratio="6" rot="SR0"/>
 </instance>
 </instances>
 <busses>
