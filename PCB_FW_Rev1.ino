@@ -2,24 +2,24 @@
 
 / This program is intended to be used with the motion/air quality sensor node. The physical node implements the following components:
 /
-/ Agilesense HB100 Doppler Radar Sensor
-/ Current sensor
-/ Air quality sensor
+/ Agilesense HB100 Doppler Radar Sensor (Analog)
+/ Allegro ACS70331 Current Sensor (Analog)
+/ Texas Instruments HDC1080 Air quality Sensor (I2C)
+/ Nexperia 74HC4051 (Analog)
 /
 / The program contains functionality to intelligently sleep and wake the ESP based on motion
 / or a timer to send air metrics. Potential improvements to the program are included in the comments throughout.
 /
 */
 
-/* pin definitions ('DX' pins are for current sensor) */
-#define D1 12 //GPIO_NUM_27
-#define D2 13 //GPIO_NUM_14 
-#define D3 14 //GPIO_NUM_12
+/* pin definitions mux */
+#define D1 GPIO_NUM_27 // 12
+#define D2 GPIO_NUM_14 // 13
 /* motion sensing pins */
-//#define doppler_in GPIO_NUM_2 // 24
-#define doppler_in GPIO_NUM_25 // signal in pin for breadboard testing
-#define I2C_SDA 33 //GPIO_NUM_21
-#define I2C_SCL 36 //GPIO_NUM_22
+//#define doppler_in GPIO_NUM_2 // 16
+//#define doppler_in GPIO_NUM_25 // signal in pin for breadboard testing
+#define doppler_in GPIO_NUM_13 // 16
+#define ADC_IN 8 // GPIO_NUM_32
 
 /* other useful definitions */
 #define doppler_interval 10000000 /* time for which ESP will ignore consecutive motion detections after initial one 
@@ -31,6 +31,7 @@
 #include <Wire.h>
 #include "ClosedCube_HDC1080.h"
 
+/* HDC1080 Declaration */
 ClosedCube_HDC1080 hdc1080;
 
 RTC_DATA_ATTR uint16_t bootCount = 0; // track # of times ESP boots for initialization purposes
@@ -61,12 +62,9 @@ void setup() {
     delay(1000);
     pinMode(D1, INPUT);
     pinMode(D2, INPUT);
-    pinMode(D3, INPUT);
     pinMode(doppler_in, INPUT);
-    pinMode(I2C_SDA, INPUT);
-    pinMode(I2C_SCL, INPUT);
     esp_sleep_enable_timer_wakeup(I2C_interval);
-    esp_sleep_enable_ext0_wakeup(doppler_in, 1); // attach interrupt on high to wake up ESP on motion
+    esp_sleep_enable_ext0_wakeup(doppler_in, 0); //enable doppler as a wakeup source 
     i2cTime_Start = millis();
     bootCount++;
     Serial.println("Boot Count: " + String(bootCount));
@@ -87,7 +85,7 @@ void setup() {
     delay(1000);
     int wake = wakeup_reason();
     
-    if (wake == 1) { // case for detected motion
+    if (wake == 1) { // Case for detected motion
       
       Serial.println("Woken up by motion");
       bool motionFlag = 1;
@@ -95,7 +93,7 @@ void setup() {
       motionFlag = 0;
       bootCount++;
       
-      esp_sleep_enable_timer_wakeup(doppler_interval); // light sleep for 10 seconds, ignoring motion input
+      esp_sleep_enable_timer_wakeup(doppler_interval); // light sleep for X seconds, ignoring motion input
       Serial.println("Light sleep start...honnk shmimimi\n");
       Serial.flush(); //"Waits for the transmission of outgoing serial data to complete."
       esp_light_sleep_start();
@@ -115,7 +113,7 @@ void setup() {
          esp_sleep_enable_timer_wakeup(I2C_interval-i2cTime_Elapsed);
       }
       
-      esp_sleep_enable_ext0_wakeup(doppler_in, 1);
+      esp_sleep_enable_ext0_wakeup(doppler_in, 0);
       Serial.println("Boot Count: " + String(bootCount));
       Serial.println("Deep sleeping...\n");
       Serial.flush(); //"Waits for the transmission of outgoing serial data to complete."
@@ -142,6 +140,7 @@ void setup() {
       Serial.println("%");
       uint16_t humid = hdc1080.readHumidity();
 
+      // uint8_t current = ;
       // server transmission can go here
        
       bootCount++;
@@ -150,7 +149,7 @@ void setup() {
       Serial.flush(); //"Waits for the transmission of outgoing serial data to complete."
       i2cTime_Start = millis();
       i2cTime_Elapsed = 0; // timer has fired; reset i2c times
-      esp_sleep_enable_ext0_wakeup(doppler_in, 1); // re-enable doppler as a wakeup source       
+      esp_sleep_enable_ext0_wakeup(doppler_in, 0); // re-enable doppler as a wakeup source       
       esp_sleep_enable_timer_wakeup(I2C_interval); // re-enable timer as a wakeup source                                       
       esp_deep_sleep_start(); //begin deep sleep   
                                             
@@ -160,7 +159,7 @@ void setup() {
       
       delay(1000);
       bootCount++;
-      esp_sleep_enable_ext0_wakeup(doppler_in, 1); // re-enable motion detection as a wakeup source
+      esp_sleep_enable_ext0_wakeup(doppler_in, 0); // re-enable motion detection as a wakeup source
       esp_sleep_enable_timer_wakeup(I2C_interval); // re-enable timer as a wakeup source                                   
       Serial.println("Woken up for unknown reason");
       Serial.println("Boot Count: " + String(bootCount));
